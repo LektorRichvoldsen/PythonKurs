@@ -63,6 +63,7 @@ else:
     print("Du har valgt en ugyldig himmelretning. Har du gått oppover eller nedover, kanskje?")
 ```
 # Løkker
+## While-løkker
 ```python 
 antall_runder = 3
 
@@ -81,24 +82,46 @@ while(number_of_bottles > 0):
 print("No more bottles of beer on the wall, no more bottles of beer.")
 print("Go to the store and buy some more, 99 bottles of beer on the wall.")
 ```
+## For-løkker
+```python 
+for tall in range(6):
+  print(tall)
+```
+```python 
+frukt_liste = ["eple", "banan", "kiwi"]
+for frukt in frukt_liste:
+  print(frukt)
+```
+```python 
+for bokstav in "Hele denne setningen.":
+  print(bokstav)
+```
 # Funksjoner
+
+## Enkel funksjon uten returverdi og uten parameter/input
 ```python 
 def enkel_funksjon():
     print("Nå kjører jeg")
 
 enkel_funksjon()
-
+```
+## Funksjon med parameter/input (uten returverdi)
+```python 
 def funksjon_med_parameter(parameter):
     print("Nå skriver jeg ut argumentet som blir sendt inn: " + parameter)
 
 funksjon_med_parameter("JEG ER ET ARGUMENT")
-
+```
+## Funksjon med returverdi (uten parameter)
+```python 
 def funksjon_med_returverdi():
     return "Jeg sendes tilbake. Putt meg i en variabel."
 
 ta_imot_svar = funksjon_med_returverdi()
 print(ta_imot_svar)
-
+```
+## Funksjon med parameter/input og returverdi
+```python 
 def funksjon_som_dobler_et_tall(tall):
     dobbelt = 2*tall
     return(dobbelt)
