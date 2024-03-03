@@ -1,7 +1,9 @@
 # Innhold
-[Variabler](#variabler)
-[If-tester](#bare-if)
-[Løkker](#løkker)
+- [Variabler](#variabler)
+- [If-tester](#bare-if)
+- [Løkker](#løkker)
+- [Funksjoner](#funksjoner)
+- [Lister/arrays](#lister)
 
 # Variabler
 
@@ -61,5 +63,47 @@ else:
     print("Du har valgt en ugyldig himmelretning. Har du gått oppover eller nedover, kanskje?")
 ```
 # Løkker
+```python 
+antall_runder = 3
 
-Bla bla bla
+while(antall_runder > 0):
+    print("Nå er det " +  str(antall_runder) + " runder igjen av løkka")
+    antall_runder = antall_runder - 1
+```
+```python 
+number_of_bottles = 99
+
+while(number_of_bottles > 0):
+    print(f"{number_of_bottles} bottles of beer on the wall, {number_of_bottles} bottles of beer.")
+    number_of_bottles = number_of_bottles-1
+    print(f"Take one down and pass it around, {number_of_bottles} bottles of beer on the wall.")
+
+print("No more bottles of beer on the wall, no more bottles of beer.")
+print("Go to the store and buy some more, 99 bottles of beer on the wall.")
+```
+# Funksjoner
+```python 
+def enkel_funksjon():
+    print("Nå kjører jeg")
+
+enkel_funksjon()
+
+def funksjon_med_parameter(parameter):
+    print("Nå skriver jeg ut argumentet som blir sendt inn: " + parameter)
+
+funksjon_med_parameter("JEG ER ET ARGUMENT")
+
+def funksjon_med_returverdi():
+    return "Jeg sendes tilbake. Putt meg i en variabel."
+
+ta_imot_svar = funksjon_med_returverdi()
+print(ta_imot_svar)
+
+def funksjon_som_dobler_et_tall(tall):
+    dobbelt = 2*tall
+    return(dobbelt)
+
+svar = funksjon_som_dobler_et_tall(4)
+print(svar)
+```
+# Lister
