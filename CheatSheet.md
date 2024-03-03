@@ -1,3 +1,8 @@
+# Innhold
+[Variabler](#variabler)
+[If-tester](#bare-if)
+[Løkker](#løkker)
+
 # Variabler
 
 ```python 
@@ -29,7 +34,7 @@ else:
     print("Du må nok sykle enn så lenge")
 
 ```
-
+## if med elif (if else) og else
 ```python 
 alder = 15
 
@@ -39,5 +44,22 @@ elif(alder > 15):
     print("Du er gammel nok til å kjøre moped")
 else:
     print("Du må nok sykle enn så lenge")
-
 ```
+## Eksempel med flere elif-er
+```python 
+himmelretning = "E"
+
+if(himmelretning == "N" or himmelretning == "n"):
+    print("Du går nordover")
+elif(himmelretning == "S" or himmelretning == "s"):
+    print("Du går sørover")
+elif(himmelretning == "E" or himmelretning == "e"):
+    print("Du går østover")
+elif(himmelretning == "W" or himmelretning == "w"):
+    print("Du går vestover")
+else:
+    print("Du har valgt en ugyldig himmelretning. Har du gått oppover eller nedover, kanskje?")
+```
+# Løkker
+
+Bla bla bla
